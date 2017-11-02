@@ -27,7 +27,7 @@ namespace ConsoleApplication1
         public string regexData = @"(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}";
         public RegexDataInfo()
         {
-            Console.WriteLine("применение регярного выражения");
+            Console.WriteLine("применение регулярного выражения");
             StreamWriter sw = new StreamWriter("D:\\wiw.txt", false, Encoding.Default);
             Match match = Regex.Match(this.st, regexData);
             while (match.Success)
